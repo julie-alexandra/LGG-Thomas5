@@ -5,6 +5,7 @@ from time import sleep
 
 url = "https://www.nytimes.com/"
 
+# may need to change Safari with Firefox
 driver = webdriver.Safari()
 driver.get(url)
 
