@@ -1,0 +1,46 @@
+import random 
+
+
+def get_word ():
+   
+    """Prompts the player 1 to choose a word and return that word"""
+
+    while True :
+        word = input ("Enter a new word to guess: ")
+        if word.isalpha():
+            return word
+        else :
+            print ("Please enter a valid word without numbers or spaces")
+
+
+def get_lives():
+
+    """Prompts the player 1 to choose a number of lives and returns this number"""
+
+    while True:
+        try:
+            lives = int(input("Choose how many lives you want to give to the player: "))
+            if lives > 0:
+                return lives
+            else :
+                print ("Please enter a positive number that is greater than 0")
+        except ValueError: 
+            print ("Please enter an integer")
+        
+
+def get_guess(suggested_letters):
+
+    """asks to the player to suggest a letter and returns the letter"""
+
+    while True:
+        letter = input ("Write a letter").lower()
+        if len(letter) != 1 or not letter.isalpha():
+            print ("Please enter only one letter")
+        elif letter in suggested_letters:
+            print ("You've already try this one")
+        else: 
+            return letter
+
+
+
+
