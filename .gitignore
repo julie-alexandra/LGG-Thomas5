@@ -1,3 +1,5 @@
 venv/
 models/
 gensim_data/
+oldpythonvenv/
+.env/
