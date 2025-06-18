@@ -35,7 +35,7 @@ SELECT * FROM Customers;
 ```
 
 Analyze the syntax.  
-- What is the purpose of the `*` symbol?  
+- What is the purpose of the `*` symbol?  Select all columns 
 - What happens if you don’t include the semicolon?  
 - What are the results displayed?
 
@@ -72,7 +72,7 @@ SELECT DISTINCT Country FROM customers;
 ```
 
 How many countries are represented in the data?
-
+24
 ---
 
 ### `ORDER BY`
